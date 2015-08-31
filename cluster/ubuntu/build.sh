@@ -22,7 +22,7 @@ set -e
 
 function cleanup {
   # cleanup work
-  rm -rf flannel* kubernetes* etcd* binaries
+  rm -rf flannel* etcd* binaries
 }
 trap cleanup SIGHUP SIGINT SIGTERM
 
